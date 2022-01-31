@@ -1,7 +1,10 @@
-from pyexpat import model
 from re import T
+
 from django.db import models
+from pyexpat import model
+
 from usersapp.models import User
+
 
 class Project(models.Model):
     name = models.CharField(max_length=32, unique=True)
