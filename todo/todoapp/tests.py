@@ -61,10 +61,7 @@ class TestProjectModelViewSet(TestCase):
         response = view(request)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-    """
-    Example about view = ToDoModelViewSet.as_view({"get": "list"})
-    user_list = UserViewSet.as_view({'get': 'list'})
-    user_detail = UserViewSet.as_view({'get': 'retrieve'})
+ retrieve'})
     class UserViewSet(viewsets.ViewSet):
     def list(self, request):
         pass
