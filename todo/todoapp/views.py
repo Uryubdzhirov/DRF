@@ -7,10 +7,8 @@ from rest_framework.viewsets import GenericViewSet, ModelViewSet
 
 from todoapp.filters import ProjectFilter
 
-
 from .models import Project, ToDo
-from .serializers import ProjectSerializer, ToDoSerializer
-
+from .serializers import ProjectSerializer, ToDoSerializer, ToDoSerializerBase
 
 
 class ProjectLimitOffsetPagination(LimitOffsetPagination):
