@@ -34,12 +34,14 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
     "rest_framework",
     "rest_framework.authtoken",
 
     "corsheaders",
     "django_filters",
     "drf_yasg",
+    "graphene_django",
 
     "usersapp",
     "todoapp",
@@ -148,6 +150,10 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.URLPathVersioning',
+}
+
+GRAPHENE = {
+    "SCHEMA": "TODO.schema.schema"
 }
 
 CORS_ALLOWED_ORIGINS = [
