@@ -11,6 +11,7 @@ class UserModelSerializer(HyperlinkedModelSerializer):
             "first_name",
             "last_name",
             "email",
+            "uuid"
         ]
 
 class UserModelSerializerV2(HyperlinkedModelSerializer):
