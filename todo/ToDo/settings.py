@@ -86,9 +86,13 @@ WSGI_APPLICATION = "TODO.wsgi.application"
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'TODO',
+        'USER': 'guest',
+        'PASSWORD': '1234',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
 
@@ -157,5 +161,7 @@ GRAPHENE = {
 }
 
 CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1",
     "http://localhost:3000",
+    "http://localhost",
 ]
